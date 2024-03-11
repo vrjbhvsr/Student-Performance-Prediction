@@ -1,0 +1,16 @@
+README.md
+setup.py
+Student_performance_prediction.egg-info/PKG-INFO
+Student_performance_prediction.egg-info/SOURCES.txt
+Student_performance_prediction.egg-info/dependency_links.txt
+Student_performance_prediction.egg-info/top_level.txt
+src/__init__.py
+src/exception.py
+src/logger.py
+src/Components/__init__.py
+src/Components/data_ingestion.py
+src/Components/data_transformation.py
+src/Components/model_trainer.py
+src/pipeline/__init__.py
+src/pipeline/prediction_pipeline.py
+src/pipeline/train_pipeline.py
