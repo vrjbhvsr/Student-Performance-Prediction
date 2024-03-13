@@ -39,10 +39,11 @@ class Data_transformation:
             cat_pipeline = Pipeline(
                 steps=[
                     ("Imputer", SimpleImputer(strategy='most_frequent')),
-                    ('one_hot_encoder',OneHotEncoder()),
-                    
+                    ('one_hot_encoder',OneHotEncoder())
                 ]
-            )
+                    )
+                    
+                
 
             logging.info("Scaling of Numerical data completed!")
 

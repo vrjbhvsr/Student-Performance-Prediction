@@ -36,3 +36,10 @@ def predict_model(models,X_train,X_test,Y_train,Y_test):
     
     except Exception as e:
         raise CustomException(e,sys)
+    
+def load_file(file_path):
+    try:
+        with open(file_path,'rb') as f:
+            return dill.load(f)
+    except Exception as e:
+        raise CustomException(e,sys)
