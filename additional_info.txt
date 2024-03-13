@@ -1,0 +1,8 @@
+Linear Regression: 0.882, 4.191, 28.821
+Lasso: 0.825, 5.156, 42.476
+Ridge: 0.881, 4.211, 29.057
+K-Neighbors Regressor: 0.786, 5.561, 51.988
+Decision Tree: 0.733, 6.31, 64.98
+Random Forest Regressor: 0.852, 4.621, 35.943
+AdaBoost Regressor: 0.843, 4.881, 38.222
+XGBRegressor: 0.821, 5.104, 43.504

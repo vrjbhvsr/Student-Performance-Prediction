@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 from src.Components.data_transformation import Data_transformation
 from src.Components.data_transformation import Data_Transformation_config
 from dataclasses import dataclass
+from src.Components.model_trainer import Model_Trainer
 
 @dataclass
 class Data_ingestion_Config:
@@ -48,7 +49,8 @@ if __name__ == "__main__":
     DI = Data_ingetsion()
     Train_data,Test_data=DI.data_ingestion()
     DT = Data_transformation()
-    DT.initiateDataTransformation(Train_data,Test_data)
-
+    train_arr,test_arr,_= DT.initiateDataTransformation(Train_data,Test_data)
+    modeltrainer = Model_Trainer()
+    modeltrainer.InitiateModelTraining(train_array=train_arr,test_array=test_arr)
 
 
